@@ -30,7 +30,7 @@ public class StudentController {
         model.addAttribute("student", stud);
         return "signUp";
     }
-    @PostMapping("/signUp")
+    @PostMapping("/sign_Up")
     public String createStudents(@ModelAttribute("student") Student students){
         Student savedStudent = studentImplService.createStudent(students);
         if(savedStudent !=null){
